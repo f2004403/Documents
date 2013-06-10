@@ -171,8 +171,8 @@
 % This also tells LaTeX to preferably break a page on one of these gaps
 % if there is a needed pagebreak nearby.
 %\newcommand{\blankline}{\quad\pagebreak[1]}
-\newcommand{\blankline}{\vspace{0.10cm}}
-\newcommand{\spc}{\vspace{1mm}}
+\newcommand{\blankline}{\vspace{0.12cm}}
+\newcommand{\spc}{\vspace{2mm}}
 \newcommand{\spcless}{\vspace{1mm}}
 \newcommand{\spcmore}{\vspace{0.2cm}}
 %%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,8 +181,6 @@
 
 \begin{document}
 \makeheading{\textbf{C.V.Krishnakumar Iyer }}
-
-\section{\textbf{Contact Information}}
 %
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table.
@@ -192,10 +190,6 @@
 %
 \newlength{\rcollength}\setlength{\rcollength}{4in}%
 %
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-739 E El Camino Real Apt 112 & \textit{Email:}\href{mailto:cvkkumar@cs.stanford.edu}{cvkkumar@cs.stanford.edu}\\
-Sunnyvale, CA-94087   &  Ph: 408-462-5745 
-\end{tabular}
 
 \section{\textbf{Interests}} Large Scale Data Mining and Analysis, Machine Learning, Information Retrieval and Software Engineering
 
@@ -204,7 +198,7 @@ Sunnyvale, CA-94087   &  Ph: 408-462-5745
 \begin{innerlist}
 \item[] M.S. \href{http://www.cs.stanford.edu/}{Computer Science}\hfill{GPA: 3.86 / 4.0}
       \begin{innerlist}
-        \item Recipient of the prestigious \emph{BPCL Scholarship} awarded by Bharat Petroleum Corporation Ltd. awarded to the elite few for graduate study in the US.
+        \item Recipient of the prestigious \emph{BPCL Scholarship} awarded by Bharat Petroleum Corporation Ltd. awarded to an elite few for graduate study in the US.
      
          \item \emph{Relevant Coursework:} \href{http://cs229.stanford.edu}{Machine Learning},  Data Mining \& E-Business, \href{http://www-stat.stanford.edu/~tibs/stat315a.html}{Elements of Statistical Learning}, \href{http://www.stanford.edu/class/msande239/}{Computational Advertising}, \href{http://cs276.stanford.edu}{ Information Retrieval \& Web Search},  \href{http://cs228.stanford.edu}{Probabilistic Graphical Models}, \href{http://cs345a.stanford.edu}{Data Mining}, \href{http://cs347.stanford.edu}{Transaction Processing and Distributed Databases}, \href{http://snap.stanford.edu/na09/}{Network Analysis}.
          %, Biomedical Systems Design(A+)
@@ -239,21 +233,21 @@ Sunnyvale, CA-94087   &  Ph: 408-462-5745
 	\begin{outerlist}
 		\item[] Fraud Detection on  AppStore % \hfill{Sep '11 - May '13}
 		\begin{innerlist}
-			\item Responsible for the end-to-end development of a fraud solution to reputation fraud on iTunes AppStore as a part of a small team; involved right from requirements gathering and conception to design, implementation and evaluation. 
-			\item Worked on applying data mining, network analysis and machine learning techniques on massive scale data.
-			\item Implemented a scalable version of the \emph{Belief propagation} that works on k-partite graphs with billions of nodes.
-			\item Responsible for communication of the working of system to different stakeholders.
+			\item Responsible for the end-to-end development of a fraud solution for the iTunes AppStore as a part of a small team; involved right from requirements gathering and conception to design, implementation and evaluation. 
+			\item Experienced with application of data mining, network analysis and machine learning techniques on massive scale data.
+			\item Designed and implemented a high performance scalable system that used  stream mining algorithms to risk transactions on real time data streams.
+			%\item Implemented a scalable version of the \emph{Belief propagation} that works on k-partite graphs with billions of nodes.
+			%\item Responsible for communication of the working of system to different stakeholders.
 			\item System currently in production.
 			\item Used Pig, Java MapReduce, Mahout and HBase on the Hadoop ecosystem.
 		\end{innerlist}
 	\end{outerlist}
-	\begin{outerlist}
-		\item[] Account Creation Fraud Detection on iTunes %\hfill{Jan '11 - May '12}
-		\begin{innerlist}
-			\item Designed and implemented a high performance scalable system that used  stream mining algorithm to risk creations on real time data streams.
-			\item Implementated in Java.
-		\end{innerlist}
-	\end{outerlist}
+%	\begin{outerlist}
+%		\item[] Account Creation Fraud Detection on iTunes %\hfill{Jan '11 - May '12}
+%		\begin{innerlist}
+%			\item Implementated in Java.
+%		\end{innerlist}
+%	\end{outerlist}
 
 	\begin{outerlist}
 	\item[] Spam Detection on iTunes Ping %\hfill{Apr '10 - June '11}
@@ -278,6 +272,7 @@ Sunnyvale, CA-94087   &  Ph: 408-462-5745
 
 \href{http://www.hpl.hp.com/india/}{\textbf{Hewlett Packard Labs-India}\hspace{1cm}\textit{Research Intern}\hfill \textit{Jan '08 to June '08}}\\
 \emph{STAIR : System for Topical and Aggregated Information Retrieval.}
+
        \begin{compactitem}
         \item {Developed the architecture and the prototype of STAIR - an IR system that  applied of a combination of Collaborative analysis and Focused Crawling techniques on the web documents to provide personalized, consolidated information relevant to the user as an aggregated PDF document.}        
         \item {Implemented in on Java using Lucene. The semantics were obtained from WordNet.}
@@ -298,7 +293,7 @@ Sunnyvale, CA-94087   &  Ph: 408-462-5745
        \end{compactitem}
 
 \blankline
-
+\spc
 \href{http://www.barc.ernet.in/}{\textbf{Bhabha Atomic Research Center}}\hspace{0.2cm}\textit{Intern at Department of Remote Handling and Robotics}\hfill \textit{May '06 to July '06}\\
  \emph{Image Processing and Software Development for Simplifying Robot Trajectory Generation}
        \begin{compactitem}
@@ -453,6 +448,13 @@ Consistent recipient of the \emph{Merit Scholarship} awarded by BITS Pilani to t
 %Apple Inc, \\
 %Cupertino, CA-95014 \\
 %E-mail : vipul@apple.com\\
+
+\section{\textbf{Contact Information}}
+
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+739 E El Camino Real Apt 112 & \textit{Email:}\href{mailto:cvkkumar@cs.stanford.edu}{cvkkumar@cs.stanford.edu}\\
+Sunnyvale, CA-94087   &  Ph: 408-462-5745 
+\end{tabular}
 
 
 \end{document}
