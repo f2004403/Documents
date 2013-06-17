@@ -1,0 +1,16 @@
+package edu.stanford.cvkkumar.leetcode.linkedlist;
+
+public class ListNode {
+	
+	int val;
+	ListNode next;
+	
+	ListNode(int x){
+		val = x;
+		next = null;
+	}
+	
+	public static String display(ListNode head) {
+		
+	}
+}

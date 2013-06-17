@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="net.sf.eclipsecs.core.config.GlobalCheckConfigurationWorkingSet">
+		<item value="-1" key="selectedRow"/>
+		<item value="50" key="colWidth3"/>
+		<item value="127" key="colWidth2"/>
+		<item value="0" key="sortColumn"/>
+		<item value="127" key="colWidth1"/>
+		<item value="170" key="colWidth0"/>
+		<item value="1" key="sortDirection"/>
+	</section>
+	<section name="net.sf.eclipsecs.ui.config.CheckConfigurationConfigureDialog">
+		<item value="161" key="colWidth3"/>
+		<item value="92" key="colWidth2"/>
+		<item value="false" key="minimized"/>
+		<item value="139" key="colWidth1"/>
+		<item value="70" key="colWidth0"/>
+		<item value="944" key="width"/>
+		<item value="-1" key="selectedRow"/>
+		<item value="false" key="maximized"/>
+		<item value="0" key="sortColumn"/>
+		<item value="671" key="height"/>
+		<item value="1" key="sortDirection"/>
+		<item value="24" key="y"/>
+		<item value="194" key="x"/>
+	</section>
+	<section name="net.sf.eclipsecs.core.projectconfig.LocalCheckConfigurationWorkingSet">
+	</section>
+	<section name="net.sf.eclipsecs.ui.config.RuleConfigurationEditDialog#FinalParameters">
+		<item value="false" key="maximized"/>
+		<item value="414" key="height"/>
+		<item value="false" key="minimized"/>
+		<item value="565" key="width"/>
+		<item value="83" key="y"/>
+		<item value="384" key="x"/>
+	</section>
+</section>

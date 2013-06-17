@@ -1,0 +1,37 @@
+package edu.stanford.cvkkumar.leetcode.linkedlist;
+
+/**
+ * 
+ * @author cvk
+ *
+ */
+public class ListNode {
+	
+	/**
+	 * 
+	 */
+	private int val;
+	
+	/**
+	 * 
+	 */
+	private ListNode next;
+	
+	/**
+	 * 
+	 * @param x
+	 */
+	public ListNode(final int x){
+		val = x;
+		next = null;
+	}
+	
+	public static String display(ListNode head) {
+		StringBuffer sb = new StringBuffer();
+		while (head != null) {
+			sb.append(head.val + "->");
+			head = head.next;
+		}
+		return sb.toString();
+	}
+}
