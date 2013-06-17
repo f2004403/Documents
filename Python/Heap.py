@@ -63,7 +63,6 @@ class HeapNode(object):
                 self.val, self.right.val = self.right.val, self.val
         if not self.is_root():
             self.parent.max_heapify()
-        
 
 
 def generate_states(q):
@@ -95,6 +94,18 @@ def find_place_to_insert(root):
             visited.append(state)
 
 
+def search_in_heap(root, val):
+    """returns if val is present in the max-heap or not"""
+
+    if root == None:
+        return False
+
+    if val == root.val:
+        return True
+
+    return search_in_heap(root.left, val) or search_in_heap(root.right, val)
+
+
 def add_to_heap(root, val):
     """docstring for add_to_heap"""
     newnode = HeapNode(val)
@@ -112,7 +123,7 @@ def main():
     add_to_heap(root, 7)
     add_to_heap(root, 3)
     add_to_heap(root, 4)
-    # 
+
     # # Adding 6
     add_to_heap(root, 6)
     add_to_heap(root, 8)
@@ -120,6 +131,7 @@ def main():
     add_to_heap(root, 1000)
 
     print root
+    print search_in_heap(root, 1002)
 
 
 if __name__ == '__main__':
